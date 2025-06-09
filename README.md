@@ -33,4 +33,4 @@
 ## Примітка
 API_URL у фронтенді має відповідати адресу бекенду.
 
-## Video[https://youtu.be/H0Lcwy0WqKk?si=DT2VHrAxB6IPMU95]
+## Video(https://youtu.be/H0Lcwy0WqKk?si=DT2VHrAxB6IPMU95)
