@@ -20,7 +20,7 @@ import java.util.Date;
 public class Note implements Serializable {
     @Id
     @GeneratedValue
-    private int id;
+    private Long id;
     private String title;
     private String content;
     @Temporal(TemporalType.TIMESTAMP)
@@ -32,6 +32,17 @@ public class Note implements Serializable {
         this.title = title;
         this.content = content;
         this.created_at = new Date();
+        this.updated_at = new Date();
+    }
+
+    @PrePersist
+    protected void onCreate() {
+        this.created_at = new Date();
+        this.updated_at = new Date();
+    }
+
+    @PreUpdate
+    protected void onUpdate() {
         this.updated_at = new Date();
     }
 }
